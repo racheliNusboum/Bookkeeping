@@ -4,12 +4,29 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+    "dev": "nodemon server",
+    "test": "jest",
+    "test:coverage": "npm run test -- --coverage"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "Bookkeeping"
+  },
+  "author": "Esty&&Racheli",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.6.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "twilio": "^5.2.1"
+    "mongodb": "^6.8.0",
+    "twilio": "^5.2.1",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.4"
   }
 }
